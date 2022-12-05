@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-      .titolo {
+      .formattazione {
         text-align: center;
       }
+      .bordo {
+         margin: auto;
+            width: 50%;
+            background-color: #E8EAED ;
+            border: 2px solid #E8EAED ;
+            padding: 10px ;
+            border-radius: 25px ;
+        }
     </style>
 
    
 </head>
 <body>
-        <div class="titolo">
+<div class="formattazione">
           <h1>Pizeeria Martorana</h1>
-          </div>
+          
       <br>
       <hr>
       <br>
@@ -24,41 +32,36 @@
       <br>
       
       <img src="../Assets/menupizzeria.jpg" width="400" height="400">
-           
-
+      <br> 
+    <div class="bordo">
     <h2>Compila il modulo</h2>
+        <form action="" method="get">
+        <label for="name">Il tuo nome: </label>
+      <input type="text" name="name" id="name"required><br>
     
-<form action="" method="get" class="nomeutente">
-    <div class="form-example">
-      <label for="name">Il tuo nome: </label>
-      <input type="text" name="name" id="name" required>
-    </div>
-        <div class="emaildiverifica">
+       <form action="" method="get"> 
       <label for="email">La tua mail: </label>
-      <input type="email" name="email" id="email" required>
-    </div>
-  <div class="cittadinascità">
+      <input type="email" name="email" id="email" required><br> 
+   
+        <form action="" method="get">
   <label for="name">La tua città: </label>
-  <input type="text" name="city" id="city">
-  </div>
-<label for="start">Data di nascità</label>
+  <input type="text" name="city" id="city"><br>
+  
+  <label for="start">Data di nascità</label>
+  <input type="date" id="Data di nascità" name="nascità" min="2000-01-01" max="2022-11-29" required><br>
+<br>
 
-  <input type="date" id="Data di nascità" name="nascità" min="2000-01-01" max="2022-11-29" required>
-
-      <fieldset>
+      <form action="" method="get">
       <legend>Acetta i termini:</legend>
   
-      <div>
-        <input type="checkbox" id="Offerte" name="offerta" checked required>
-        <label for="scales">Ricevi nuove offerte</label>
-      </div>
-  
-      <div>
+      
+        <input type="checkbox" id="Offerte" name="offerta"  required>
+        <label for="scales">Ricevi nuove offerte</label><br>
+     
         <input type="checkbox" id="termini" name="accetta i termini" required>
-        <label for="horns">Accetta i termini sulla privacy</label>
-      </div>
-  </fieldset>
-  <div class="iscrizione">
+        <label for="horns">Accetto i Termini e le Condizioni della privacy<br>
+   
+  
     <input type="submit" value="Iscriviti">
   </div>
 
